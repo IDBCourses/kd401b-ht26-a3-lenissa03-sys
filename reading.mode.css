@@ -1,0 +1,16 @@
+/* LOAD ATKINSON HYPERLEGIBLE */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+/* READING MODE: FONT FAMILY */
+
+body,
+h1,
+h2,
+h3,
+p,
+a,
+figcaption,
+caption,
+button {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}

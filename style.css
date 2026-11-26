@@ -38,6 +38,43 @@
   --color-border: var(--NEUTRALLIGHT200);
 }
 
+:root {
+  /* H1 */
+  --font-h1: "Futura", sans-serif;
+  --size-h1: 15rem;
+  --weight-h1: 800;
+  --line-height-h1: 1.5;
+  --letter-spacing-h1: -0.03em;
+
+  /* H2 */
+  --font-h2: "Futura", sans-serif;
+  --size-h2: 12.125rem;
+  --weight-h2: 800;
+  --line-height-h2: 1.5;
+  --letter-spacing-h2: -0.03em;
+
+  /* H3 */
+  --font-h3: "Futura", sans-serif;
+  --size-h3: 5rem;
+  --weight-h3: 800;
+  --line-height-h3: 1.5;
+  --letter-spacing-h3: -0.03em;
+
+  /* Body */
+  --font-body: "Futura", sans-serif;
+  --size-body: 2.5rem;
+  --weight-body: 800;
+  --line-height-body: 1.5;
+  --letter-spacing-body: -0.03em;
+
+  /* Caption */
+  --font-caption: "Futura", sans-serif;
+  --size-caption: 2rem;
+  --weight-caption: 800;
+  --line-height-caption: 1.5;
+  --letter-spacing-caption: -0.03em;
+}
+
 /* LIGHT MODE */
 
 body {
@@ -82,4 +119,253 @@ article,
 aside {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
+}
+/* COLOUR PALETTE BUTTONS */
+
+.palette-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.colour-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  padding: 0;
+}
+
+/* The colours of the buttons themselves */
+
+.colour-button.blue {
+  background-color: #002ad2;
+}
+
+.colour-button.brown {
+  background-color: #432818;
+}
+
+.colour-button.green {
+  background-color: #d0ff00;
+}
+
+.colour-button.purple {
+  background-color: #ff009a;
+}
+
+.colour-button.white {
+  background-color: #ffffff;
+}
+
+/* Show which colour is selected */
+
+.colour-button[aria-pressed="true"] {
+  outline: 3px solid black;
+  outline-offset: 4px;
+}
+
+/* Button hover */
+
+.colour-button:hover {
+  transform: scale(1.1);
+}
+/* GENERAL PAGE STRUCTURE */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* PALETTE BUTTONS */
+
+.palette-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.colour-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  padding: 0;
+}
+
+/* COLOUR OF THE PALETTE CIRCLES */
+
+.colour-button.blue {
+  background-color: #002ad2;
+}
+
+.colour-button.brown {
+  background-color: #432818;
+}
+
+.colour-button.green {
+  background-color: #d0ff00;
+}
+
+.colour-button.purple {
+  background-color: #ff009a;
+}
+
+.colour-button.white {
+  background-color: #ffffff;
+}
+
+/* SELECTED COLOUR */
+
+.colour-button[aria-pressed="true"] {
+  outline: 3px solid black;
+  outline-offset: 4px;
+}
+
+/* HOVER */
+
+.colour-button:hover {
+  transform: scale(1.1);
+}
+/* PORTFOLIO LAYOUT */
+
+.portfolio {
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* LOCATION AND EMAIL */
+
+.portfolio-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.location {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.email {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+}
+
+.email a {
+  text-decoration: none;
+}
+
+/* NAME */
+
+.intro {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  font-family: Futura, "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 0;
+}
+
+/* JOB TITLE */
+
+.intro h2 {
+  font-family: Futura, "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 900;
+  margin-top: 8rem;
+  letter-spacing: -0.02em;
+}
+
+/* IMAGE */
+
+.portfolio-image {
+  width: min(80%, 400px);
+  margin: 3rem auto;
+}
+
+.portfolio-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* THEME CONTROLS */
+
+.controls {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.palette-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.colour-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  padding: 0;
+}
+
+.colour-button.blue {
+  background-color: #002ad2;
+}
+
+.colour-button.brown {
+  background-color: #432818;
+}
+
+.colour-button.green {
+  background-color: #d0ff00;
+}
+
+.colour-button.purple {
+  background-color: #ff009a;
+}
+
+.colour-button.white {
+  background-color: #ffffff;
+}
+
+.colour-button[aria-pressed="true"] {
+  outline: 3px solid black;
+  outline-offset: 3px;
+}
+
+/* SMALLER SCREEN */
+
+@media (max-width: 600px) {
+  .intro {
+    margin-top: 5rem;
+  }
+
+  .intro h2 {
+    margin-top: 5rem;
+  }
+
+  .portfolio-image {
+    width: 85%;
+  }
 }

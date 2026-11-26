@@ -1,0 +1,55 @@
+:root {
+  --PAGE11: #70e4ef;
+  --PAGE12: #432818;
+  --PAGE13: #ff7a2b;
+
+  --color-bg: var(--PAGE12);
+  --color-heading: var(--PAGE11);
+  --color-role: var(--PAGE11);
+  --color-small: var(--PAGE11);
+  --color-accent: var(--PAGE13);
+  --color-surface: transparent;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+h2,
+h3 {
+  color: var(--color-role);
+}
+
+header p,
+caption,
+figcaption {
+  color: var(--color-small);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+button:not(.colour-button) {
+  background-color: var(--color-heading);
+  color: var(--color-bg);
+}
+.location {
+  color: var(--color-small);
+}
+
+.email {
+  color: var(--color-accent);
+}
+
+.intro h1 {
+  color: var(--color-heading);
+}
+
+.intro h2 {
+  color: var(--color-role);
+}
