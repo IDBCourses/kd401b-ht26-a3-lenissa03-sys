@@ -1,235 +1,9 @@
-:root {
-  --PRIMARYLIGHT100: #dde0e4;
-  --PRIMARYLIGHT200: #c3c8cf;
-  --PRIMARYLIGHT300: #a6adb7;
-  --PRIMARYLIGHT400: #858e9b;
-  --PRIMARYLIGHT500: #68727f;
-  --PRIMARYLIGHT600: #505a67;
-  --PRIMARYLIGHT700: #3b444f;
-  --PRIMARYLIGHT800: #292f38;
-  --PRIMARYLIGHT900: #20232a;
-
-  --ACCENTLIGHT100: #ffd6ed;
-  --ACCENTLIGHT200: #ffb0dd;
-  --ACCENTLIGHT300: #ff82ca;
-  --ACCENTLIGHT400: #f94db5;
-  --ACCENTLIGHT500: #e92b9f;
-  --ACCENTLIGHT600: #c91683;
-  --ACCENTLIGHT700: #a60063;
-  --ACCENTLIGHT800: #8a0050;
-  --ACCENTLIGHT900: #65003a;
-
-  --NEUTRALLIGHT100: #f0f1f3;
-  --NEUTRALLIGHT200: #e4e6e9;
-  --NEUTRALLIGHT300: #d3d6db;
-  --NEUTRALLIGHT400: #bec2c9;
-  --NEUTRALLIGHT500: #a4a9b2;
-  --NEUTRALLIGHT600: #858b95;
-  --NEUTRALLIGHT700: #686f79;
-  --NEUTRALLIGHT800: #4b515b;
-  --NEUTRALLIGHT900: #30353d;
-
-  --color-bg: var(--NEUTRALLIGHT100);
-  --color-surface: #ffffff;
-  --color-text: var(--PRIMARYLIGHT900);
-  --color-text-secondary: var(--NEUTRALLIGHT700);
-  --color-heading: var(--PRIMARYLIGHT900);
-  --color-accent: var(--ACCENTLIGHT800);
-  --color-border: var(--NEUTRALLIGHT200);
-}
-
-:root {
-  /* H1 */
-  --font-h1: "Futura", sans-serif;
-  --size-h1: 15rem;
-  --weight-h1: 800;
-  --line-height-h1: 1.5;
-  --letter-spacing-h1: -0.03em;
-
-  /* H2 */
-  --font-h2: "Futura", sans-serif;
-  --size-h2: 12.125rem;
-  --weight-h2: 800;
-  --line-height-h2: 1.5;
-  --letter-spacing-h2: -0.03em;
-
-  /* H3 */
-  --font-h3: "Futura", sans-serif;
-  --size-h3: 5rem;
-  --weight-h3: 800;
-  --line-height-h3: 1.5;
-  --letter-spacing-h3: -0.03em;
-
-  /* Body */
-  --font-body: "Futura", sans-serif;
-  --size-body: 2.5rem;
-  --weight-body: 800;
-  --line-height-body: 1.5;
-  --letter-spacing-body: -0.03em;
-
-  /* Caption */
-  --font-caption: "Futura", sans-serif;
-  --size-caption: 2rem;
-  --weight-caption: 800;
-  --line-height-caption: 1.5;
-  --letter-spacing-caption: -0.03em;
-}
-
-/* LIGHT MODE */
-
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: var(--color-heading);
-}
-
-p {
-  font-size: 20px;
-  color: var(--color-text-secondary);
-  font-weight: bold;
-}
-
-a {
-  color: var(--color-accent);
-}
-
-a:hover {
-  color: hsl(326, 100%, 25%);
-}
-
-button {
-  background-color: var(--color-accent);
-  color: #ffffff;
-  border: none;
-  padding: 10px 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: hsl(326, 100%, 25%);
-}
-
-article,
-aside {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-}
-/* COLOUR PALETTE BUTTONS */
-
-.palette-buttons {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.colour-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  padding: 0;
-}
-
-/* The colours of the buttons themselves */
-
-.colour-button.blue {
-  background-color: #002ad2;
-}
-
-.colour-button.brown {
-  background-color: #432818;
-}
-
-.colour-button.green {
-  background-color: #d0ff00;
-}
-
-.colour-button.purple {
-  background-color: #ff009a;
-}
-
-.colour-button.white {
-  background-color: #ffffff;
-}
-
-/* Show which colour is selected */
-
-.colour-button[aria-pressed="true"] {
-  outline: 3px solid black;
-  outline-offset: 4px;
-}
-
-/* Button hover */
-
-.colour-button:hover {
-  transform: scale(1.1);
-}
 /* GENERAL PAGE STRUCTURE */
 
 body {
   margin: 0;
   min-height: 100vh;
 }
-
-/* PALETTE BUTTONS */
-
-.palette-buttons {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.colour-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  padding: 0;
-}
-
-/* COLOUR OF THE PALETTE CIRCLES */
-
-.colour-button.blue {
-  background-color: #002ad2;
-}
-
-.colour-button.brown {
-  background-color: #432818;
-}
-
-.colour-button.green {
-  background-color: #d0ff00;
-}
-
-.colour-button.purple {
-  background-color: #ff009a;
-}
-
-.colour-button.white {
-  background-color: #ffffff;
-}
-
-/* SELECTED COLOUR */
-
-.colour-button[aria-pressed="true"] {
-  outline: 3px solid black;
-  outline-offset: 4px;
-}
-
-/* HOVER */
-
-.colour-button:hover {
-  transform: scale(1.1);
-}
-/* PORTFOLIO LAYOUT */
 
 .portfolio {
   min-height: 100vh;
@@ -275,6 +49,7 @@ body {
   font-weight: 900;
   letter-spacing: -0.03em;
   margin-bottom: 0;
+  transform: scaleY(1.5);
 }
 
 /* JOB TITLE */
@@ -285,6 +60,7 @@ body {
   font-weight: 900;
   margin-top: 8rem;
   letter-spacing: -0.02em;
+  transform: scaleY(1.5);
 }
 
 /* IMAGE */
@@ -300,7 +76,7 @@ body {
   height: auto;
 }
 
-/* THEME CONTROLS */
+/* THEME AND READING MODE CONTROLS */
 
 .controls {
   position: fixed;
@@ -313,11 +89,22 @@ body {
   gap: 1rem;
 }
 
+/* GENERAL BUTTONS */
+
+button {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* COLOUR PALETTE BUTTONS */
+
 .palette-buttons {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .colour-button {
@@ -328,6 +115,8 @@ body {
   cursor: pointer;
   padding: 0;
 }
+
+/* COLOURS OF THE PALETTE CIRCLES */
 
 .colour-button.blue {
   background-color: #002ad2;
@@ -349,12 +138,20 @@ body {
   background-color: #ffffff;
 }
 
+/* SELECTED COLOUR */
+
 .colour-button[aria-pressed="true"] {
   outline: 3px solid black;
   outline-offset: 3px;
 }
 
-/* SMALLER SCREEN */
+/* HOVER */
+
+.colour-button:hover {
+  transform: scale(1.1);
+}
+
+/* SMALLER SCREENS */
 
 @media (max-width: 600px) {
   .intro {
