@@ -20,20 +20,24 @@ body {
 }
 
 .location {
-  font-size: 0.8rem;
+  font-family: Futura, "Arial Narrow", Impact, sans-serif;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.08em;
   margin-bottom: 0.4rem;
 }
 
 .email {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-top: 0;
+  transform: scaleY(1.5);
 }
 
 .email a {
+  font-size: 0.5rem;
   text-decoration: none;
+  transform: scaleY(1.5);
 }
 
 /* NAME */
@@ -47,6 +51,7 @@ body {
   font-family: Futura, "Arial Narrow", Impact, sans-serif;
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 900;
+  margin-top: 5rem;
   letter-spacing: -0.03em;
   margin-bottom: 0;
   transform: scaleY(1.5);
@@ -56,9 +61,9 @@ body {
 
 .intro h2 {
   font-family: Futura, "Arial Narrow", Impact, sans-serif;
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 900;
-  margin-top: 8rem;
+  margin-top: 4rem;
   letter-spacing: -0.02em;
   transform: scaleY(1.5);
 }
@@ -66,7 +71,7 @@ body {
 /* IMAGE */
 
 .portfolio-image {
-  width: min(80%, 400px);
+  width: min(80%, 220px);
   margin: 3rem auto;
 }
 
